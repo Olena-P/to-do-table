@@ -69,13 +69,17 @@
 
 .select-box__input-text {
     display: none;
-    width: 100%;
+    width: 85px;
     margin: 0;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
     color: #000000;
+
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
 }
 
 .select-box__list {

@@ -1,6 +1,7 @@
-// .to-do {
-//     margin: 248px 417px 586px 116px;
-// }
+.to-do {
+    margin-top: 248px;
+    margin-left: 116px;
+}
 
 .period-block{
     position: relative;
@@ -69,6 +70,10 @@
     &:hover .category__block-description,
     &:focus .category__block-description {
         display: block;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
 
     &:hover .arrow,
