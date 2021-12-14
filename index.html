@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sass/main.css">
+</head>
+<body>
+    <header> <h1></h1> </header>
+
+    <main>
+        <section class="to-do">
+            <div class="period-block">
+                <div class="to-do__period">
+                    <svg class="to-do__period-svg">
+                        <use xlink:href="./svg/sprite.svg#icon-calendar"></use>
+                    </svg>
+    
+                    <h2 class="to-do__period-date">Today is <time  datetime="2021-03-25">25 March, 2021, Monday</time></h2>
+                </div>
+            </div>
+
+            <ul class="to-do__list">
+                <li class="to-do__list-row">
+                    <svg class="arrow">
+                        <use xlink:href="./svg/sprite.svg#icon-arrow"></use>
+                    </svg>
+                    
+                    <div class="row">
+                        <div class="row__time">
+                            <p class="time-interval">ALL DAY</p>
+                        </div>
+    
+                        <div class="row__category">
+                            <div>
+                                <svg class="category__svg">
+                                    <use xlink:href="./svg/sprite.svg#icon-payment"></use>
+                                </svg>
+                            </div>
+    
+                            <div class="category__block">
+                                <h2 class="category__block-title">Payment</h2>
+                                <h3 class="category__block-subtitle">Garage service payment</h3>
+                                <p class="category__block-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis libero rutrum amet, tempus. Ridiculus sem tincidunt libero</p>
+                            </div>
+                        </div>
+    
+                        <div class="status-action-block">
+                            <div class="row__status status__background-green">
+                                <circle class="circle"> </circle>
+                                <p class="row__status-name">Paid</p>
+                            </div>
+        
+                            <fieldset class="fieldset">
+                                <legend class="fieldset__legend">Action</legend>
+
+                                <div class="select-box">
+                                    <div class="select-box__current" tabindex="1">
+                                      <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="0" value="1" name="1" checked="checked"/>
+                                        <p class="select-box__input-text">Select</p>
+                                      </div>
+                                      <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="1" value="2" name="1"/>
+                                        <p class="select-box__input-text">Mark as paid</p>
+                                      </div>
+                                      <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="2" value="3" name="1"/>
+                                        <p class="select-box__input-text">Rescheduled</p>
+                                      </div>
+                                      
+                                        <svg class="select-box__icon" alt="Arrow Icon" aria-hidden="true">
+                                            <use xlink:href="./svg/sprite.svg#icon-polygon"></use>
+                                        </svg>
+                                    </div>
+
+                                    <ul class="select-box__list">
+                                        <li>
+                                          <label class="select-box__option" for="1" aria-hidden="aria-hidden">Mark as paid</label>
+                                        </li>
+                                        <li>
+                                          <label class="select-box__option" for="2" aria-hidden="aria-hidden">Rescheduled</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="to-do__list-row">
+                    <svg class="arrow">
+                        <use xlink:href="./svg/sprite.svg#icon-arrow"></use>
+                    </svg>
+
+                    <div class="row">
+                        <div class="row__time">
+                            <p class="time">05:30</p>
+                            <p class="time-interval">AM</p>
+                        </div>
+    
+                        <div class="row__category">
+                            <div>
+                                <svg class="category__svg">
+                                    <use xlink:href="./svg/sprite.svg#icon-payment"></use>
+                                </svg>
+                            </div>
+    
+                            <div class="category__block">
+                                <h2 class="category__block-title">Payment</h2>
+                                <h3 class="category__block-subtitle">Garage service payment</h3>
+                                <p class="category__block-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis libero rutrum amet, tempus. Ridiculus sem tincidunt libero</p>
+                            </div>
+                        </div>
+    
+                        <div class="status-action-block">
+                            <div class="row__status status__background-red">
+                                <circle class="circle"> </circle>
+                                <p class="row__status-name">Unpaid</p>
+                            </div>
+        
+                            <fieldset class="fieldset">
+                                <legend class="fieldset__legend">Action</legend>
+
+                                <div class="select-box">
+                                    <div class="select-box__current" tabindex="2">
+                                      <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="3" value="3" name="2" checked="checked"/>
+                                        <p class="select-box__input-text">Select</p>
+                                      </div>
+                                      <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="4" value="4" name="2"/>
+                                        <p class="select-box__input-text">Mark as paid</p>
+                                      </div>
+                                      <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="5" value="5" name="2"/>
+                                        <p class="select-box__input-text">Rescheduled</p>
+                                      </div>
+                                      
+                                        <svg class="select-box__icon" alt="Arrow Icon" aria-hidden="true">
+                                            <use xlink:href="./svg/sprite.svg#icon-polygon"></use>
+                                        </svg>
+                                    </div>
+
+                                    <ul class="select-box__list">
+                                        <li>
+                                          <label class="select-box__option" for="4" aria-hidden="aria-hidden">Mark as paid</label>
+                                        </li>
+                                        <li>
+                                          <label class="select-box__option" for="5" aria-hidden="aria-hidden">Rescheduled</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="to-do__list-row">
+                    <svg class="arrow">
+                        <use xlink:href="./svg/sprite.svg#icon-arrow"></use>
+                    </svg>
+
+                    <div class="row">
+                        <div class="row__time">
+                            <p class="time">05:30</p>
+                            <p class="time-interval">AM</p>
+                        </div>
+    
+                        <div class="row__category row__category-task">
+                            <div>
+                                <svg class="category__svg">
+                                    <use xlink:href="./svg/sprite.svg#icon-task"></use>
+                                </svg>
+                            </div>
+    
+                            <div class="category__block">
+                                <h2 class="category__block-title">Task</h2>
+                                <h3 class="category__block-subtitle">Room Cleaning</h3>
+                                <p class="category__block-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis libero rutrum amet, tempus. Ridiculus sem tincidunt libero</p>
+                            </div>
+                        </div>
+    
+                        <div class="status-action-block">
+                            <div class="row__status status__background-red">
+                                <circle class="circle"> </circle>
+                                <p class="row__status-name">To Do</p>
+                            </div>
+        
+                            <fieldset class="fieldset">
+                                <legend class="fieldset__legend">Action</legend>
+
+                                <div class="select-box">
+                                    <div class="select-box__current" tabindex="3">
+                                      <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="7" value="7" name="3" checked="checked"/>
+                                        <p class="select-box__input-text">Select</p>
+                                      </div>
+                                      <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="8" value="8" name="3"/>
+                                        <p class="select-box__input-text">Mark as paid</p>
+                                      </div>
+                                      <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="9" value="9" name="3"/>
+                                        <p class="select-box__input-text">Rescheduled</p>
+                                      </div>
+                                      
+                                        <svg class="select-box__icon" alt="Arrow Icon" aria-hidden="true">
+                                            <use xlink:href="./svg/sprite.svg#icon-polygon"></use>
+                                        </svg>
+                                    </div>
+
+                                    <ul class="select-box__list">
+                                        <li>
+                                          <label class="select-box__option" for="8" aria-hidden="aria-hidden">Mark as paid</label>
+                                        </li>
+                                        <li>
+                                          <label class="select-box__option" for="9" aria-hidden="aria-hidden">Rescheduled</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="to-do__list-row">
+                    <svg class="arrow">
+                        <use xlink:href="./svg/sprite.svg#icon-arrow"></use>
+                    </svg>
+
+                    <div class="row">
+                        <div class="row__time">
+                            <p class="time-interval">ALL DAY</p>
+                        </div>
+    
+                        <div class="row__category">
+                            <div>
+                                <svg class="category__svg">
+                                    <use xlink:href="./svg/sprite.svg#icon-payment"></use>
+                                </svg>
+                            </div>
+    
+                            <div class="category__block">
+                                <h2 class="category__block-title">Payment</h2>
+                                <h3 class="category__block-subtitle">Garage service payment</h3>
+                                <p class="category__block-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis libero rutrum amet, tempus. Ridiculus sem tincidunt libero</p>
+                            </div>
+                        </div>
+    
+                        <div class="status-action-block">
+                            <div class="row__status status__background-green">
+                                <circle class="circle"> </circle>
+                                <p class="row__status-name">Paid</p>
+                            </div>
+        
+                            <fieldset class="fieldset">
+                                <legend class="fieldset__legend">Action</legend>
+
+                                <div class="select-box">
+                                    <div class="select-box__current" tabindex="3">
+                                      <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="10" value="10" name="4" checked="checked"/>
+                                        <p class="select-box__input-text">Select</p>
+                                      </div>
+                                      <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="11" value="11" name="4"/>
+                                        <p class="select-box__input-text">Mark as paid</p>
+                                      </div>
+                                      <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="12" value="12" name="4"/>
+                                        <p class="select-box__input-text">Rescheduled</p>
+                                      </div>
+                                      
+                                        <svg class="select-box__icon" alt="Arrow Icon" aria-hidden="true">
+                                            <use xlink:href="./svg/sprite.svg#icon-polygon"></use>
+                                        </svg>
+                                    </div>
+
+                                    <ul class="select-box__list">
+                                        <li>
+                                          <label class="select-box__option" for="11" aria-hidden="aria-hidden">Mark as paid</label>
+                                        </li>
+                                        <li>
+                                          <label class="select-box__option" for="12" aria-hidden="aria-hidden">Rescheduled</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="to-do__list-row">
+                    <svg class="arrow">
+                        <use xlink:href="./svg/sprite.svg#icon-arrow"></use>
+                    </svg>
+
+                    <div class="row">
+                        <div class="row__time">
+                            <p class="time-interval">ALL DAY</p>
+                        </div>
+    
+                        <div class="row__category">
+                            <div>
+                                <svg class="category__svg">
+                                    <use xlink:href="./svg/sprite.svg#icon-event"></use>
+                                </svg>
+                            </div>
+    
+                            <div class="category__block">
+                                <h2 class="category__block-title">Event</h2>
+                                <h3 class="category__block-subtitle">Birthday home party</h3>
+                                <p class="category__block-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis libero rutrum amet, tempus. Ridiculus sem tincidunt libero</p>
+                            </div>
+                        </div>
+    
+                        <div class="status-action-block">
+                            <div class="row__status status__background-gray">
+                                <circle class="circle"> </circle>
+                                <p class="row__status-name">No Answer</p>
+                            </div>
+        
+                            
+                            <fieldset class="fieldset">
+                                <legend class="fieldset__legend">Action</legend>
+
+                                <div class="select-box">
+                                    <div class="select-box__current" tabindex="3">
+                                      <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="13" value="13" name="5" checked="checked"/>
+                                        <p class="select-box__input-text">Select</p>
+                                      </div>
+                                      <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="14" value="14" name="5"/>
+                                        <p class="select-box__input-text">Mark as paid</p>
+                                      </div>
+                                      <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="15" value="15" name="5"/>
+                                        <p class="select-box__input-text">Rescheduled</p>
+                                      </div>
+                                      
+                                        <svg class="select-box__icon" alt="Arrow Icon" aria-hidden="true">
+                                            <use xlink:href="./svg/sprite.svg#icon-polygon"></use>
+                                        </svg>
+                                    </div>
+
+                                    <ul class="select-box__list">
+                                        <li>
+                                          <label class="select-box__option" for="14" aria-hidden="aria-hidden">Mark as paid</label>
+                                        </li>
+                                        <li>
+                                          <label class="select-box__option" for="15" aria-hidden="aria-hidden">Rescheduled</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <div class="modal">
+            <p class="modal__question">Are you sure?</p>
+
+            <div class="button-container">
+                <button class="modal__button">No</button>
+                <button class="modal__button">Yes</button>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+</body>
+</html>

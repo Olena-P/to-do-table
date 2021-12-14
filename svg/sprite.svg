@@ -1,0 +1,22 @@
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <symbol id="icon-calendar" viewBox="0 0 27 32">
+            <path fill="#5dcb42" style="fill:var(--color1, #5dcb42)" d="M24.381 3.429h-1.524V.381h-3.048v3.048H7.618V.381H4.57v3.048H3.046A3.034 3.034 0 0 0 .014 6.477L-.001 27.81a3.047 3.047 0 0 0 3.048 3.048H24.38a3.057 3.057 0 0 0 3.048-3.048V6.477a3.057 3.057 0 0 0-3.048-3.048zm0 24.381H3.048V11.048h21.333V27.81zM6.095 14.095h7.619v7.619H6.095v-7.619z"/>
+        </symbol>
+        <symbol id="icon-event" viewBox="0 0 32 32">
+            <path fill="#f7a90d" style="fill:var(--color2, #f7a90d)" d="M32 16c0 8.837-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0s16 7.163 16 16z"/><path fill="#fff" style="fill:var(--color3, #fff)" d="M21.25 21.25h-10.5V13h10.5v8.25zM19 7.75v1.5h-6v-1.5h-1.5v1.5h-.75c-.832 0-1.5.668-1.5 1.5v10.5a1.503 1.503 0 0 0 1.5 1.5h10.5a1.503 1.503 0 0 0 1.5-1.5v-10.5a1.5 1.5 0 0 0-1.5-1.5h-.75v-1.5H19zm.75 8.25H16v3.75h3.75V16z"/>
+        </symbol>
+        <symbol id="icon-task" viewBox="0 0 32 32">
+            <path fill="#c562c3" style="fill:var(--color4, #c562c3)" d="M32 16c0 8.837-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0s16 7.163 16 16z"/><path fill="#fff" style="fill:var(--color3, #fff)" d="M9.25 9.25h4.5v3h-4.5v-3zm9 5.25h4.5v3h-4.5v-3zm0 5.25h4.5v3h-4.5v-3zm-1.5-3h-4.5v3.75h4.5V22h-6v-8.25h1.5v1.5h4.5v1.5z"/>
+        </symbol>
+        <symbol id="icon-payment" viewBox="0 0 32 32">
+            <path fill="#5dcb42" style="fill:var(--color1, #5dcb42)" d="M32 16c0 8.837-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0s16 7.163 16 16z"/><path fill="#fff" style="fill:var(--color3, #fff)" d="M12.25 18.25h1.5c0 .81 1.027 1.5 2.25 1.5s2.25-.69 2.25-1.5c0-.825-.78-1.125-2.43-1.523-1.59-.398-3.57-.893-3.57-2.977 0-1.342 1.102-2.482 2.625-2.865V9.25h2.25v1.635c1.523.383 2.625 1.522 2.625 2.865h-1.5c0-.81-1.027-1.5-2.25-1.5s-2.25.69-2.25 1.5c0 .825.78 1.125 2.43 1.523 1.59.398 3.57.892 3.57 2.977 0 1.343-1.102 2.483-2.625 2.865v1.635h-2.25v-1.635c-1.523-.383-2.625-1.523-2.625-2.865z"/>
+        </symbol>
+        <symbol id="icon-arrow" viewBox="0 0 48 32">
+            <path fill="#000000" d="M48 5.64 42.36 0 24 18.32 5.64 0 0 5.64l24 24 24-24z"/>
+        </symbol>
+        <symbol id="icon-polygon" viewBox="0 0 39 32">
+            <path fill="#b5b5b5" style="fill:var(--color1, #b5b5b5)" d="M22.349 28.452a3.555 3.555 0 0 1-5.587 0L.992 8.422C-.844 6.09.817 2.667 3.786 2.667h31.539c2.969 0 4.63 3.423 2.794 5.755l-15.77 20.03z"/>
+        </symbol>
+    </defs>
+</svg>

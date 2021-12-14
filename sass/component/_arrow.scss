@@ -1,0 +1,9 @@
+.arrow {
+	width: 7.41px;
+	height: 12px;
+	fill: black;
+	
+	:hover{
+		transform: rotate(45deg);
+	}
+}

@@ -1,0 +1,150 @@
+.fieldset{
+    width: 120px;
+    height: 43px;
+    background: #FFFFFF;
+    border: 1px solid #F2EDED;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 0;
+}
+
+.fieldset__legend{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 9px;
+    line-height: 11px;
+    text-transform: uppercase;
+    color: #C4C4C4;
+    margin-left: 12px;
+}
+
+.select-box {
+    position: relative;
+    display: block;
+    padding: 8px 11px 11px 11px;
+}
+
+.select-box__current {
+    position: relative;
+    cursor: pointer;
+    outline: none;
+}
+
+.select-box__current:focus + .select-box__list {
+    opacity: 1;
+    -webkit-animation-name: none;
+            animation-name: none;
+}
+
+.select-box__current:focus + .select-box__list .select-box__option {
+    cursor: pointer;
+}
+
+.select-box__current:focus .select-box__icon {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.select-box__icon {
+    position: absolute;
+    top: 50%;
+    right: -3px;
+    transform: translateY(-50%);
+    transition: 0.5s ease;
+    width: 15px;
+    height: 11px;
+}
+
+.select-box__value {
+    display: flex;
+    width: 95px;
+}
+
+.select-box__input {
+    display: none;
+}
+
+.select-box__input:checked + .select-box__input-text {
+    display: block;
+}
+
+.select-box__input-text {
+    display: none;
+    width: 100%;
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.select-box__list {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.18);
+    border-radius: 5px;
+    opacity: 0;
+    -webkit-animation-name: HideList;
+            animation-name: HideList;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-timing-function: step-start;
+            animation-timing-function: step-start;
+}
+
+.select-box__option {
+    position: relative;
+    display: block;
+    width: 96px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 19px;
+    color: #000000;
+    padding: 6px 11px;
+    margin-top: 9px;
+
+    &:hover,
+    &:focus{
+        color: #5DCB42;
+    };
+
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 11px;
+        height: 1px;
+        width: 95px;
+        background-color: #F2EDED;
+    }
+
+    // &:hover .modal,
+    // &:focus .modal {
+    //     display: block;
+    // }
+}
+
+@-webkit-keyframes HideList {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
+}
+
+@keyframes HideList {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
+}
